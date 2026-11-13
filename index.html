@@ -94,6 +94,21 @@ details p{color:var(--mute);margin-top:14px;max-width:660px}
 .cur{position:fixed;left:0;top:0;width:90px;height:90px;margin:-45px 0 0 -45px;border-radius:50%;background:var(--cream);color:var(--ink);display:flex;align-items:center;justify-content:center;font:500 12px 'Barlow Condensed';letter-spacing:.2em;z-index:90;pointer-events:none;transform:scale(0);mix-blend-mode:normal}
 .fix{position:fixed;right:28px;bottom:28px;z-index:60;background:var(--cream);color:var(--ink);box-shadow:0 6px 24px rgba(0,0,0,.25);padding:14px 26px;border-radius:99px;font-size:14px}
 @media(max-width:820px){.nav{padding:14px 20px;mix-blend-mode:normal;background:rgba(42,37,32,.94);backdrop-filter:blur(6px)}.nav .r{display:none}.yt iframe{transform:translateX(-62%) scale(1.32)}.hero h1{font-size:clamp(40px,12vw,64px)}.fix{right:16px;bottom:16px}.hero .in{padding:0 20px 40px}.st,.dl,.ab{padding-left:20px;padding-right:20px}.st .sub,.dl,.item{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.item{padding:0 20px}.pj .hd{padding:0 20px}.track{display:block;width:100%}.hz{height:auto}.pan{width:100%;min-height:100vh;border-radius:0!important}.pan .im{position:relative;right:auto;top:auto;width:100%;margin:20px 0}.pan .im.b{width:100%}.cnt{display:none}.fin .ct,.ft{padding-left:20px;padding-right:20px}.scroll{display:none}}
+@media(max-width:820px){
+.dl .sticky{position:static;top:auto}
+.dl{gap:30px;padding-top:12vh;padding-bottom:10vh}
+.yt{display:none}
+.hero .bg{display:block}
+.pan{min-height:auto;height:auto;justify-content:flex-start;gap:28px;padding:96px 20px 56px;overflow:visible}
+.pan .im,.pan .im.b{position:relative;right:auto;top:auto;left:auto;width:100%;aspect-ratio:4/3;margin:0}
+.pan .tx{max-width:none}
+.pan h2{font-size:clamp(30px,8.4vw,44px)}
+.hz{height:auto;overflow:visible}
+.track{display:block;width:100%}
+.pan:not(:first-child){border-radius:28px 28px 0 0;margin-left:0;margin-top:-28px;position:relative}
+.stp{grid-template-columns:56px 1fr;gap:12px}
+.fin .mq{padding:0 20px}
+}
 </style></head><body>
 <div class="pre"><div class="w">머무는 순간을<br>설계합니다</div><div class="n">0</div></div>
 <div class="cur">VIEW</div>
@@ -183,7 +198,7 @@ gsap.utils.toArray('.item h3,.item .meta,.item .lab,.stp,.fq h2,details').forEac
 const cur=document.querySelector('.cur');if(!mob){addEventListener('mousemove',e=>gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.35}));
 document.querySelectorAll('.ph2,.pan .im').forEach(e=>{e.addEventListener('mouseenter',()=>gsap.to(cur,{scale:1,duration:.4}));e.addEventListener('mouseleave',()=>gsap.to(cur,{scale:0,duration:.4}))})}
 
-var YS=702,YE=717;var tg=document.createElement('script');tg.src='https://www.youtube.com/iframe_api';document.head.appendChild(tg);
+var YS=702,YE=717;if(!mob){var tg=document.createElement('script');tg.src='https://www.youtube.com/iframe_api';document.head.appendChild(tg);}
 window.onYouTubeIframeAPIReady=function(){var p=new YT.Player('ytp',{videoId:'u3c_9k6i3As',playerVars:{autoplay:1,mute:1,controls:0,disablekb:1,fs:0,modestbranding:1,rel:0,iv_load_policy:3,cc_load_policy:0,playsinline:1,start:YS,end:YE,origin:location.origin},events:{onReady:function(e){e.target.mute();e.target.seekTo(YS);e.target.playVideo()},onStateChange:function(e){if(e.data===1){document.querySelector('.yt').classList.add('on')}if(e.data===0){p.seekTo(YS);p.playVideo()}}}});
 setInterval(function(){try{if(p.getCurrentTime&&p.getCurrentTime()>=YE-.2){p.seekTo(YS)}}catch(x){}},300)};
 </script></body></html>
