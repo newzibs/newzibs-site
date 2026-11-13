@@ -2,7 +2,7 @@
 <title>NEWZIBS — 머무는 순간을 설계합니다</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Serif+KR:wght@200;300;400&family=Noto+Sans+KR:wght@300;400&family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--fs-display:clamp(44px,7vw,112px);--fs-h2:clamp(32px,4.2vw,60px);--fs-h3:clamp(22px,2.4vw,34px);--fs-h4:20px;--fs-body:17px;--fs-small:14px;--fs-label:13px;--fs-num:clamp(56px,7vw,104px);--serif:'Noto Serif KR',serif;--cream:#f1f3e8;--navy:#0b1230;--navy2:#1c2650;--ink:#15130f;--mute:#7b7a70;--gold:#c3a583}
+:root{--fs-display:clamp(44px,7vw,112px);--fs-h2:clamp(32px,4.2vw,60px);--fs-h3:clamp(22px,2.4vw,34px);--fs-h4:20px;--fs-body:17px;--fs-small:14px;--fs-label:13px;--fs-num:clamp(56px,7vw,104px);--serif:'Noto Serif KR',serif;--cream:#f1f3e8;--navy:#2a2520;--navy2:#3d352d;--ink:#15130f;--mute:#7b7a70;--gold:#c3a583}
 *{box-sizing:border-box;margin:0;padding:0}
 html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
 body{background:var(--cream);color:var(--ink);font:300 var(--fs-body)/1.75 'Noto Sans KR',sans-serif;word-break:keep-all;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -25,7 +25,7 @@ a{color:inherit;text-decoration:none}img{display:block}
 .hero{position:relative;height:100vh;min-height:640px;overflow:hidden;color:var(--cream);display:flex;flex-direction:column;justify-content:flex-end}
 .yt{position:absolute;inset:0;overflow:hidden;z-index:0;background:#1b1510 url(p00.jpg) center/cover}.yt iframe{position:absolute;top:0;left:50%;width:max(100vw,177.78vh);height:max(56.25vw,100vh);transform:translateX(-35%) scale(1.32);transform-origin:50% 0;border:0;pointer-events:none;opacity:0;transition:opacity 1.2s}.yt.on iframe{opacity:1}.hero .bg{display:none;position:absolute;inset:-6%;background-size:cover;background-position:center;opacity:0;transition:opacity 1.8s ease;will-change:transform}
 .hero .bg.on{opacity:1}
-.hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,8,6,.72),rgba(10,8,6,.25) 60%,rgba(10,8,6,.1)),linear-gradient(180deg,rgba(8,10,24,.4),rgba(8,10,24,0) 35%,rgba(8,10,24,.6))}
+.hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(10,8,6,.72),rgba(10,8,6,.25) 60%,rgba(10,8,6,.1)),linear-gradient(180deg,rgba(15,12,10,.4),rgba(15,12,10,0) 35%,rgba(15,12,10,.6))}
 .hero .in{position:relative;z-index:2;padding:0 40px 60px}
 .hero h1{font:300 var(--fs-display)/1.15 var(--serif);letter-spacing:-.04em}
 .hero h1 em{font:inherit;font-style:normal}
@@ -85,15 +85,15 @@ summary{list-style:none;cursor:pointer;display:flex;justify-content:space-betwee
 details p{color:var(--mute);margin-top:14px;max-width:660px}
 /* final */
 .fin{background:var(--navy);color:var(--cream);padding:18vh 0 0;overflow:hidden;position:relative}
-.fin .mq{white-space:nowrap;font:200 clamp(72px,12vw,200px)/1 var(--serif);margin-bottom:6vh}
+.fin .mq{padding:0 40px;font:200 clamp(30px,5.2vw,80px)/1.15 var(--serif);letter-spacing:-.03em;margin-bottom:6vh}
 .fin .mq span{display:inline-block;padding-right:.5em}
 .fin .ct{padding:0 40px 8vh;display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap}
 .fin h3{font:300 var(--fs-h2)/1.3 var(--serif);letter-spacing:-.04em}
 .btn{background:var(--cream);color:var(--ink);padding:20px 40px;border-radius:99px;font:400 var(--fs-body) 'Noto Sans KR';display:inline-block}
-.ft{padding:26px 40px;border-top:1px solid #2a3260;display:flex;justify-content:space-between;font-size:12px;opacity:.6;gap:20px;flex-wrap:wrap}
+.ft{padding:26px 40px;border-top:1px solid #4a423a;display:flex;justify-content:space-between;font-size:12px;opacity:.6;gap:20px;flex-wrap:wrap}
 .cur{position:fixed;left:0;top:0;width:90px;height:90px;margin:-45px 0 0 -45px;border-radius:50%;background:var(--cream);color:var(--ink);display:flex;align-items:center;justify-content:center;font:500 12px 'Barlow Condensed';letter-spacing:.2em;z-index:90;pointer-events:none;transform:scale(0);mix-blend-mode:normal}
 .fix{position:fixed;right:28px;bottom:28px;z-index:60;background:var(--cream);color:var(--ink);box-shadow:0 6px 24px rgba(0,0,0,.25);padding:14px 26px;border-radius:99px;font-size:14px}
-@media(max-width:820px){.nav{padding:14px 20px;mix-blend-mode:normal;background:rgba(11,18,48,.9);backdrop-filter:blur(6px)}.nav .r{display:none}.yt iframe{transform:translateX(-62%) scale(1.32)}.hero h1{font-size:clamp(40px,12vw,64px)}.fix{right:16px;bottom:16px}.hero .in{padding:0 20px 40px}.st,.dl,.ab{padding-left:20px;padding-right:20px}.st .sub,.dl,.item{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.item{padding:0 20px}.pj .hd{padding:0 20px}.track{display:block;width:100%}.hz{height:auto}.pan{width:100%;min-height:100vh;border-radius:0!important}.pan .im{position:relative;right:auto;top:auto;width:100%;margin:20px 0}.pan .im.b{width:100%}.cnt{display:none}.fin .ct,.ft{padding-left:20px;padding-right:20px}.scroll{display:none}}
+@media(max-width:820px){.nav{padding:14px 20px;mix-blend-mode:normal;background:rgba(42,37,32,.94);backdrop-filter:blur(6px)}.nav .r{display:none}.yt iframe{transform:translateX(-62%) scale(1.32)}.hero h1{font-size:clamp(40px,12vw,64px)}.fix{right:16px;bottom:16px}.hero .in{padding:0 20px 40px}.st,.dl,.ab{padding-left:20px;padding-right:20px}.st .sub,.dl,.item{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.item{padding:0 20px}.pj .hd{padding:0 20px}.track{display:block;width:100%}.hz{height:auto}.pan{width:100%;min-height:100vh;border-radius:0!important}.pan .im{position:relative;right:auto;top:auto;width:100%;margin:20px 0}.pan .im.b{width:100%}.cnt{display:none}.fin .ct,.ft{padding-left:20px;padding-right:20px}.scroll{display:none}}
 </style></head><body>
 <div class="pre"><div class="w">머무는 순간을<br>설계합니다</div><div class="n">0</div></div>
 <div class="cur">VIEW</div>
@@ -103,7 +103,7 @@ details p{color:var(--mute);margin-top:14px;max-width:660px}
 <header class="hero"><div class="yt"><div id="ytp"></div></div><div class="bg on" style="background-image:url(p00.jpg)"></div><div class="bg" style="background-image:url(p01.jpg)"></div><div class="bg" style="background-image:url(p02.jpg)"></div>
 <div class="in"><div class="lab br" style="margin-bottom:26px">Composed stays &amp; homes · Seoul</div>
 <h1><span class="ln"><span>머무는 순간을</span></span><span class="ln"><span>설계합니다<em>.</em></span></span></h1>
-<div class="row"><p>살릴 건 살리고, 장점은 더 도드라지게. 공사부터 스타일링, 숙박업 운영까지 한 사람이 끝까지 맡습니다.</p><div class="scroll lab">Scroll</div></div></div></header>
+<div class="row"><p>살릴 건 살리고, 장점은 더 도드라지게. 공사부터 스타일링, 숙박업 운영까지 전담 팀이 끝까지 맡습니다.</p><div class="scroll lab">Scroll</div></div></div></header>
 
 <section class="st"><div class="lab br">Philosophy</div>
 <p class="big" id="big">집은 단순한 공간이 아니라 머무는 사람의 경험입니다. 동선, 빛, 촉감, 첫인상까지. 우리는 그 모든 순간을 하나의 장면으로 설계합니다.</p>
@@ -129,8 +129,8 @@ details p{color:var(--mute);margin-top:14px;max-width:660px}
 <div class="item"><div class="ph2"><div class="par" style="background-image:url(p04.jpg)"></div></div><div><div class="lab br">Taiwan</div><h3>대만 K홈스타일링<br>현지 스타일링과 강의</h3><div class="meta"><div><span>수강생</span><b>1,720</b></div><div><span>장소</span><b>Taiwan</b></div></div></div></div>
 </section>
 
-<section class="dl" id="dl"><div class="sticky"><div class="lab br">Controlled delivery</div><h2>공사는 투명하게,<br>책임은 한 사람이<br>끝까지.</h2></div><div>
-<div class="stp"><i>01</i><div><h4>담당자 1명</h4><p>상담부터 마무리까지 같은 사람이 맡습니다. 책임이 나뉘지 않아요.</p></div></div>
+<section class="dl" id="dl"><div class="sticky"><div class="lab br">Controlled delivery</div><h2>공사는 투명하게,<br>책임은 전담 팀이<br>끝까지.</h2></div><div>
+<div class="stp"><i>01</i><div><h4>전문 디자이너 전담 팀</h4><p>공간 전문 디자이너와 패브릭 디자이너가 한 팀으로 전담합니다. 상담부터 마무리까지 같은 팀이 함께해요.</p></div></div>
 <div class="stp"><i>02</i><div><h4>설계 · 예산 · 시공</h4><p>단계마다 확인받고 넘어갑니다. 지금 어디쯤인지 항상 알 수 있어요.</p></div></div>
 <div class="stp"><i>03</i><div><h4>비용 변경은 항상 공유</h4><p>달라지는 내용은 진행 전에 먼저 알려드립니다.</p></div></div>
 <div class="stp"><i>04</i><div><h4>현장 품질 관리</h4><p>마감 상태를 직접 확인하고 사진으로 기록합니다.</p></div></div></div></section>
@@ -141,7 +141,7 @@ details p{color:var(--mute);margin-top:14px;max-width:660px}
 <details><summary>지방이나 해외도 가능한가요? 원격 상담은요?</summary><p>지방은 방문 상담, 그 외는 온라인 상담으로 진행해요. 순천과 대만 사례가 있어요.</p></details>
 <details><summary>스타일링만 따로 맡길 수 있나요?</summary><p>네. 스타일링만, 컨설팅만도 가능합니다.</p></details></section>
 
-<section class="fin" id="ct"><div class="mq"><span>Tell us about your space — </span><span>Tell us about your space — </span></div>
+<section class="fin" id="ct"><div class="mq">Tell us about your space.</div>
 <div class="ct"><h3>어떤 서비스가 맞을지 모르겠다면,<br>공간 이야기부터 들려주세요.</h3><a class="btn" href="https://pf.kakao.com/_ExgDxeG">카카오 채널로 무료 상담</a></div>
 <div class="ft"><span>뉴집스 · 대표 김희연 · 686-05-03505 · studio@newzibs.co.kr</span><span>© 2026 NEWZIBS</span></div></section>
 
@@ -178,7 +178,7 @@ gsap.from('.cd',{y:60,opacity:0,stagger:.12,duration:1.1,ease:'power3.out',scrol
 gsap.utils.toArray('.par').forEach(e=>gsap.fromTo(e,{yPercent:-8},{yPercent:8,ease:'none',scrollTrigger:{trigger:e.parentElement,start:'top bottom',end:'bottom top',scrub:true}}));
 gsap.utils.toArray('.item h3,.item .meta,.item .lab,.stp,.fq h2,details').forEach(e=>gsap.from(e,{y:50,opacity:0,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:e,start:'top 90%'}}));
 // marquee
-gsap.to('.mq',{xPercent:-30,ease:'none',scrollTrigger:{trigger:'.fin',start:'top bottom',end:'bottom bottom',scrub:true}});
+
 // cursor
 const cur=document.querySelector('.cur');if(!mob){addEventListener('mousemove',e=>gsap.to(cur,{x:e.clientX,y:e.clientY,duration:.35}));
 document.querySelectorAll('.ph2,.pan .im').forEach(e=>{e.addEventListener('mouseenter',()=>gsap.to(cur,{scale:1,duration:.4}));e.addEventListener('mouseleave',()=>gsap.to(cur,{scale:0,duration:.4}))})}
